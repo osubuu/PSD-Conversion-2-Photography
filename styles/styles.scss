@@ -1,0 +1,375 @@
+@import "partials/setup.scss";
+@import "partials/utils.scss";
+@import "partials/typography.scss";
+
+/*
+============================================================
+GENERAL STYLING THAT COME UP OFTEN
+============================================================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.header,
+.services,
+.sample-shoots,
+.reviews,
+.latest-news,
+.question,
+.gallery,
+.contact,
+.footer {
+  width: 100%;
+}
+
+/* WRAPPER */
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper--padding {
+  padding: 6% 0;
+}
+
+.wrapper--flex-row {
+  display: flex;
+}
+
+.wrapper--flex-col,
+.content-container--flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper--content-center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* CONTENT CONTAINER */
+
+.content-container {
+  width: 100%;
+}
+
+.content-container--flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.content-container--flex-start {
+  align-items: flex-start;
+}
+
+.content-container--margin-left {
+  margin-left: 2em;
+}
+
+.content-container--fb-33 {
+  flex-basis: 33%;
+}
+
+/*
+============================================================
+HEADER
+============================================================
+*/
+
+.header {
+  background-image: url(../assets/image-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+}
+
+.nav {
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav--col {
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation__item {
+  margin-right: 1em;
+}
+
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.greeting {
+  position: absolute;
+  top: 38%;
+  left: 62%;
+}
+
+/*
+============================================================
+WELCOME
+============================================================
+*/
+
+.welcome {
+  background-color: $background-color-1;
+  text-align: center;
+}
+
+/*
+============================================================
+SERVICES
+============================================================
+*/
+
+.services {
+  background-color: $background-color-2;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list--evenly {
+  justify-content: space-evenly;
+}
+
+.list--fb-33 {
+  flex-basis: 33%;
+}
+.list--flex-col {
+  flex-direction: column;
+}
+
+.list__item {
+  text-align: center;
+}
+
+.list__item--fb-30 {
+  flex-basis: 30%;
+}
+
+.list__item--col-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list__item--left {
+  text-align: left;
+}
+
+.list--bg {
+  background-color: $background-color-6;
+}
+
+.list__icon {
+  font-size: 60px;
+}
+
+/*
+============================================================
+TESTIMONIALS
+============================================================
+*/
+
+.testimonials {
+  background-color: $background-color-1;
+}
+
+/*
+============================================================
+SAMPLE SHOOTS
+============================================================
+*/
+
+.sample-shoots {
+  display: flex;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container__description {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: rgba($hover-bg-color-1-rgb, $hover-bg-color-1-alpha);
+  color: $font-color-3;
+
+  display: none;
+}
+
+.image-container:hover .image-container__description {
+  display: flex;
+}
+
+.content--padding {
+  padding: 3% 20%;
+}
+
+/*
+============================================================
+REVIEWS
+============================================================
+*/
+
+.reviews {
+  background-color: $font-color-4;
+  text-align: center;
+}
+
+.image-container__arrow {
+  position: absolute;
+  color: $font-color-8;
+  font-size: 4.1rem;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.image-container__arrow--left {
+  left: -27.5%;
+}
+
+.image-container__arrow--right {
+  right: -27.5%;
+}
+
+/*
+============================================================
+LATEST NEWS
+============================================================
+*/
+
+.latest-news {
+  background-color: $background-color-4;
+}
+
+/*
+============================================================
+QUESTION
+============================================================
+*/
+
+.question {
+  background-color: $background-color-5;
+}
+
+.subtitle--borders {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.subtitle--margins {
+  margin: 0 5%;
+}
+
+/*
+============================================================
+GALLERY
+============================================================
+*/
+
+.gallery {
+  background-color: $background-color-3;
+}
+
+.gallery-container {
+  flex-basis: 66%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container--fb-50 {
+  flex-basis: 50%;
+}
+
+.list__item--dark-bg:hover {
+  background-color: $hover-bg-color-2;
+}
+
+/*
+============================================================
+CONTACT
+============================================================
+*/
+
+.contact {
+  background-color: $background-color-1;
+  position: relative;
+}
+
+.emailForm__input {
+  background-image: url(../assets/paper-plane-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 5%;
+  background-position: 94% 50%;
+}
+
+.title--margin-bot {
+  margin-bottom: 1em;
+}
+
+.image-container--fb-25 {
+  flex-basis: 25%;
+  padding: 1%;
+}
+
+.social-media {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.social-media__icon {
+  margin-bottom: 1em;
+}
+
+/*
+============================================================
+FOOTER
+============================================================
+*/
+
+.footer {
+  background-color: #2a2a2a;
+  text-align: center;
+}
