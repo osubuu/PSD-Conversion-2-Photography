@@ -147,10 +147,16 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   font-family: "Catamaran", "Lato", sans-serif;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  color: #2a2a2a; }
 
 body {
   font-size: 2.5rem; }
+
+.main-title {
+  font-size: 8rem;
+  text-transform: uppercase;
+  line-height: 8rem; }
 
 .section-title {
   padding-bottom: 1em;
@@ -172,18 +178,55 @@ body {
 .content {
   font-size: 2.4rem; }
 
-.content--small {
+.content--small,
+.emailForm__input {
   font-size: 1.6rem; }
+
+.content--light-grey {
+  color: #efefef; }
+
+.content--lato {
+  font-family: "Lato";
+  line-height: 2.6rem; }
 
 .lesser-title {
   font-size: 2.3rem;
   font-style: italic;
   font-weight: 400; }
 
+.subtitle, .text-form__input[type="text"]::-webkit-input-placeholder {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.subtitle, .text-form__input[type="text"]:-ms-input-placeholder {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.subtitle, .text-form__input[type="text"]::-ms-input-placeholder {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.subtitle, .text-form__input[type="text"]::placeholder {
+  font-size: 2rem;
+  text-transform: uppercase; }
+
+.subtitle--reset, .text-form__input {
+  text-transform: none; }
+
+.subtitle--bold,
+.main-title--bold,
+.title--bold,
+.section-title--bold {
+  font-weight: 700; }
+
 .smallest-title {
   color: #eeeded;
   text-transform: uppercase;
   padding: 0.25em 0; }
+
+.content--slightly-smaller {
+  font-size: 1.7rem;
+  font-weight: 400; }
 
 /*
 ============================================================
@@ -202,8 +245,10 @@ a:visited {
 
 img {
   width: 100%;
-  height: 100%;
   display: block; }
+
+.img--height {
+  height: 100%; }
 
 .header,
 .services,
@@ -248,6 +293,11 @@ img {
   align-items: center;
   text-align: center; }
 
+.wrapper--space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
 /* CONTENT CONTAINER */
 .content-container {
   width: 100%; }
@@ -268,9 +318,20 @@ img {
 .content-container--margin-left {
   margin-left: 2em; }
 
-.content-container--fb-33 {
-  -ms-flex-preferred-size: 33%;
-  flex-basis: 33%; }
+.content-container--right-padding {
+  padding: 0 4.5em 0 0; }
+
+/* BUTTON */
+.button, .text-form__submit {
+  border: 1px solid #2a2a2a;
+  background: none;
+  letter-spacing: 0.25em;
+  padding: 0.5em 1.5em;
+  border-radius: 50px;
+  margin: 0.5em 0; }
+
+.button--add-margin, .text-form__submit {
+  margin: 2.5em 0 1em 0; }
 
 /*
 ============================================================
@@ -315,8 +376,9 @@ HEADER
 
 .greeting {
   position: absolute;
-  top: 38%;
-  left: 62%; }
+  top: 39%;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
 
 /*
 ============================================================
@@ -339,18 +401,21 @@ SERVICES
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  display: flex; }
 
 .list--evenly {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly; }
 
-.list--fb-33 {
-  -ms-flex-preferred-size: 33%;
-  flex-basis: 33%; }
+.list--between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.list--fb-30 {
+  -ms-flex-preferred-size: 31.5%;
+  flex-basis: 31.5%; }
 
 .list--flex-col {
   -webkit-box-orient: vertical;
@@ -362,8 +427,8 @@ SERVICES
   text-align: center; }
 
 .list__item--fb-30 {
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%; }
+  -ms-flex-preferred-size: 31.5%;
+  flex-basis: 31.5%; }
 
 .list__item--col-center {
   display: -webkit-box;
@@ -392,6 +457,11 @@ TESTIMONIALS
 */
 .testimonials {
   background-color: #ffffff; }
+
+.image-container--fb-40 {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 40%;
+  flex: 1 0 40%; }
 
 /*
 ============================================================
@@ -432,8 +502,17 @@ SAMPLE SHOOTS
   display: -ms-flexbox;
   display: flex; }
 
+.image-container:hover .image-container__description--white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff; }
+
 .content--padding {
   padding: 3% 20%; }
+
+.content--horiz-padding {
+  padding: 0 12.5%; }
 
 /*
 ============================================================
@@ -475,12 +554,42 @@ QUESTION
 .question {
   background-color: #f2b094; }
 
-.subtitle--borders {
+.subtitle--borders, .text-form__input {
+  border: none;
   border-top: 1px solid black;
   border-bottom: 1px solid black; }
 
-.subtitle--margins {
+.subtitle--margins, .text-form__input {
   margin: 0 5%; }
+
+.subtitle--top-margin {
+  margin-top: 1em; }
+
+.textForm {
+  display: block; }
+
+.text-form__input {
+  display: block;
+  text-align: center;
+  width: 90%;
+  padding: 0.5em;
+  background: none; }
+
+.text-form__input[type="text"]::-webkit-input-placeholder {
+  opacity: 1;
+  font-weight: 700; }
+
+.text-form__input[type="text"]:-ms-input-placeholder {
+  opacity: 1;
+  font-weight: 700; }
+
+.text-form__input[type="text"]::-ms-input-placeholder {
+  opacity: 1;
+  font-weight: 700; }
+
+.text-form__input[type="text"]::placeholder {
+  opacity: 1;
+  font-weight: 700; }
 
 /*
 ============================================================
@@ -491,20 +600,33 @@ GALLERY
   background-color: #efefef; }
 
 .gallery-container {
-  -ms-flex-preferred-size: 66%;
-  flex-basis: 66%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; }
+
+.gallery-container--flex-wrap {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+.gallery-container--fb-66 {
+  -ms-flex-preferred-size: 66%;
+  flex-basis: 66%; }
+
+.gallery-container--space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
 .image-container--fb-50 {
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%; }
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 48%; }
 
 .list__item--dark-bg:hover {
   background-color: #2a2a2a; }
+
+.image-container--margin-bot {
+  margin-bottom: 4%; }
 
 /*
 ============================================================
@@ -516,6 +638,8 @@ CONTACT
   position: relative; }
 
 .emailForm__input {
+  width: 100%;
+  padding: 1% 15% 1% 2%;
   background-image: url(../assets/paper-plane-solid.svg);
   background-repeat: no-repeat;
   background-size: 5%;
@@ -525,9 +649,9 @@ CONTACT
   margin-bottom: 1em; }
 
 .image-container--fb-25 {
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
-  padding: 1%; }
+  -ms-flex-preferred-size: 22%;
+  flex-basis: 22%;
+  margin: 0 3% 3% 0; }
 
 .social-media {
   position: absolute;
