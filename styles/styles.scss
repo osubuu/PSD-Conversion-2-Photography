@@ -18,6 +18,7 @@ a,
 a:visited {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 img {
@@ -132,10 +133,11 @@ HEADER
 }
 
 .nav {
-  padding-top: 1em;
+  margin-top: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 
   &--col {
     flex-direction: column;
@@ -143,6 +145,28 @@ HEADER
 
   &--margin-top {
     margin-top: 2em;
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + .navigation {
+      display: flex;
+    }
+  }
+
+  &__toggle-icon {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__mobile-top-container {
+    width: 100%;
+    position: relative;
   }
 }
 

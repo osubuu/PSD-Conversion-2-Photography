@@ -236,7 +236,8 @@ GENERAL STYLING THAT COME UP OFTEN
 a,
 a:visited {
   color: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 img {
   width: 100%;
@@ -340,7 +341,7 @@ HEADER
   position: relative; }
 
 .nav {
-  padding-top: 1em;
+  margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,7 +350,8 @@ HEADER
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: relative; }
   .nav--col {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -357,6 +359,24 @@ HEADER
     flex-direction: column; }
   .nav--margin-top {
     margin-top: 2em; }
+  .nav__checkbox {
+    display: none; }
+    .nav__checkbox:checked + .navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  .nav__toggle-icon {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer; }
+  .nav__mobile-top-container {
+    width: 100%;
+    position: relative; }
 
 .navigation {
   display: -webkit-box;
@@ -641,3 +661,103 @@ FOOTER
 MEDIA QUERIES
 ============================================================
 */
+@media all and (max-width: 1275px), all and (max-height: 900px) {
+  .header {
+    background-position: right top;
+    background-size: auto; } }
+
+@media all and (max-width: 1150px) {
+  .image-container__description .title {
+    font-size: 2.4rem; }
+  .image-container__description .content {
+    font-size: 1.2rem; } }
+
+@media all and (max-width: 1150px) {
+  .services .list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .services .list__item {
+      margin-bottom: 1.5em;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .services .list__item--col-center {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row; }
+  .contact .content-container--right-padding {
+    padding-right: 1.5em; } }
+
+@media all and (max-height: 900px) and (max-width: 1400px) {
+  html {
+    font-size: 57.5%; } }
+
+@media all and (max-width: 900px) {
+  html {
+    font-size: 55%; }
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .nav__toggle-icon {
+      display: block; }
+  .navigation {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5em; }
+    .navigation__item:not(:last-child) {
+      margin: 0;
+      border-bottom: 1px dotted #2a2a2a; }
+  .greeting {
+    text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .sample-shoots {
+    display: none; }
+  .contact .content-container--flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .contact .content-container--flex-row .content-container {
+      margin-bottom: 0.75em; }
+      .contact .content-container--flex-row .content-container--right-padding {
+        padding-right: 2em; }
+  .contact .email-form__input {
+    background-size: 4%; }
+  .contact .nav {
+    display: none; } }
+
+@media all and (max-width: 750px) {
+  .wrapper {
+    max-width: 85%; }
+  .testimonials .content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+    .testimonials .content-container .image-container {
+      margin-bottom: 1em; }
+    .testimonials .content-container--margin-left {
+      margin: 0; } }
+
+@media all and (max-width: 500px), all and (max-height: 400px) {
+  html {
+    font-size: 50%; } }
