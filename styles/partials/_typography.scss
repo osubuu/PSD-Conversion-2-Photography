@@ -12,6 +12,10 @@ body {
   font-size: $font-size-1;
   text-transform: uppercase;
   line-height: 8rem;
+
+  &--bold {
+    font-weight: 700;
+  }
 }
 
 .section-title {
@@ -19,38 +23,66 @@ body {
   font-size: $font-size-2;
   text-transform: uppercase;
   text-align: center;
-}
 
-.section-title--blue,
-.subtitle--blue {
-  color: $font-color-2;
+  &--blue {
+    color: $font-color-2;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
 }
 
 .title {
   font-size: $font-size-3;
   text-transform: uppercase;
+
+  &--white {
+    color: $font-color-5;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
 }
 
-.title--white {
-  color: $font-color-5;
+.subtitle {
+  font-size: $font-size-6;
+  text-transform: uppercase;
+
+  &--blue {
+    color: $font-color-2;
+  }
+
+  &--reset {
+    text-transform: none;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
 }
 
 .content {
   font-size: $font-size-4;
-}
 
-.content--small,
-%content--small {
-  font-size: $font-size-9;
-}
+  &--small {
+    font-size: $font-size-9;
+  }
 
-.content--light-grey {
-  color: $font-color-4;
-}
+  &--slightly-smaller {
+    font-size: $font-size-8;
+    font-weight: 400;
+  }
 
-.content--lato {
-  font-family: "Lato";
-  line-height: 2.6rem;
+  &--light-grey {
+    color: $font-color-4;
+  }
+
+  &--lato {
+    font-family: "Lato";
+    line-height: 2.6rem;
+  }
 }
 
 .lesser-title {
@@ -59,29 +91,8 @@ body {
   font-weight: 400;
 }
 
-.subtitle {
-  font-size: $font-size-6;
-  text-transform: uppercase;
-}
-
-.subtitle--reset {
-  text-transform: none;
-}
-
-.subtitle--bold,
-.main-title--bold,
-.title--bold,
-.section-title--bold {
-  font-weight: 700;
-}
-
 .smallest-title {
   color: $font-color-6;
   text-transform: uppercase;
   padding: 0.25em 0;
-}
-
-.content--slightly-smaller {
-  font-size: $font-size-8;
-  font-weight: 400;
 }
