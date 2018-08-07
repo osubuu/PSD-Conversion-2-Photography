@@ -239,9 +239,15 @@ a:visited {
   text-decoration: none;
   cursor: pointer; }
 
+a:focus,
+a:active {
+  outline: 0; }
+
 img {
   width: 100%;
-  display: block; }
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .img--height {
   height: 100%; }
@@ -373,6 +379,11 @@ HEADER
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     cursor: pointer; }
+    .nav__toggle-icon:hover {
+      color: #285d64;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
   .nav__mobile-top-container {
     width: 100%;
     position: relative; }
@@ -385,12 +396,35 @@ HEADER
     margin-right: 1em; }
     .navigation__item:last-child {
       margin-right: 0; }
+  .navigation .subtitle:hover, .navigation .text-form__input:hover[type="text"]::-webkit-input-placeholder {
+    color: #285d64;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
+  .navigation .subtitle:hover, .navigation .text-form__input:hover[type="text"]:-ms-input-placeholder {
+    color: #285d64;
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+  .navigation .subtitle:hover, .navigation .text-form__input:hover[type="text"]::-ms-input-placeholder {
+    color: #285d64;
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+  .navigation .subtitle:hover, .navigation .text-form__input:hover[type="text"]::placeholder {
+    color: #285d64;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
 
 .greeting {
   position: absolute;
   top: 39%;
   -ms-flex-item-align: end;
   align-self: flex-end; }
+  .greeting .button:hover, .greeting .text-form__submit:hover {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    background-color: rgba(40, 93, 100, 0.75);
+    color: #ffffff; }
 
 /*
 ============================================================
@@ -400,6 +434,12 @@ WELCOME
 .welcome {
   background-color: #ffffff;
   text-align: center; }
+  .welcome .button:hover, .welcome .text-form__submit:hover {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    background-color: rgba(40, 93, 100, 0.9);
+    color: #ffffff; }
 
 /*
 ============================================================
@@ -449,8 +489,13 @@ SERVICES
       justify-content: center; }
     .list__item--left {
       text-align: left; }
+    .list__item--dark-bg {
+      -webkit-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      padding: 1 em; }
     .list__item--dark-bg:hover {
-      background-color: rgba(42, 42, 42, 0.78); }
+      background-color: rgba(42, 42, 42, 0.55); }
   .list__icon {
     font-size: 60px; }
 
@@ -471,6 +516,24 @@ SAMPLE SHOOTS
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.sample-shoots .image-container:hover,
+.latest-news .image-container:hover,
+.gallery .image-container:hover,
+.contact .image-container:hover {
+  /* whyus's CSS code for background hover effect:
+    https://jsfiddle.net/fr243agf/
+    */
+  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+  z-index: 9999; }
 
 .image-container {
   position: relative; }
@@ -509,9 +572,10 @@ SAMPLE SHOOTS
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
-    background-color: rgba(42, 42, 42, 0.78);
+    background-color: rgba(42, 42, 42, 0.55);
     color: #e6e2e2;
-    display: none; }
+    display: none;
+    cursor: pointer; }
     .image-container__description--white {
       color: #ffffff; }
   .image-container__arrow {
@@ -526,6 +590,12 @@ SAMPLE SHOOTS
       left: -27.5%; }
     .image-container__arrow--right {
       right: -27.5%; }
+    .image-container__arrow:hover {
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s;
+      color: #ffffff;
+      cursor: pointer; }
   .image-container--max-width-73 {
     max-width: 73px; }
 
@@ -551,6 +621,8 @@ LATEST NEWS
 */
 .latest-news {
   background-color: #f5f3f3; }
+  .latest-news .subtitle--blue:hover {
+    text-decoration: underline; }
 
 /*
 ============================================================
@@ -559,6 +631,9 @@ QUESTION
 */
 .question {
   background-color: #f2b094; }
+  .question .button:hover, .question .text-form__submit:hover {
+    color: #f2b094;
+    background-color: rgba(42, 42, 42, 0.85); }
 
 .subtitle--borders, .text-form__input {
   border: none;
@@ -624,6 +699,12 @@ CONTACT
 .contact {
   background-color: #ffffff;
   position: relative; }
+  .contact .content:hover i {
+    font-size: 125%;
+    color: #3c8d97;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .email-form {
   margin-top: 0.5em; }
@@ -633,7 +714,13 @@ CONTACT
     background-image: url(../assets/paper-plane-solid.svg);
     background-repeat: no-repeat;
     background-size: 5%;
-    background-position: 94% 50%; }
+    background-position: 94% 50%;
+    border: 1px solid #2a2a2a; }
+    .email-form__input:focus {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      border-color: #3c8d97; }
 
 .social-media {
   position: absolute;
@@ -644,6 +731,16 @@ CONTACT
   transform: translateY(-50%); }
   .social-media__icon {
     margin-bottom: 1em; }
+    .social-media__icon:hover .fab {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .social-media__icon:hover .fa-instagram {
+      color: #e4405f; }
+    .social-media__icon:hover .fa-facebook-square {
+      color: #3b5999; }
+    .social-media__icon:hover .fa-pinterest-p {
+      color: #bd081c; }
 
 .title--margin-bot {
   margin-bottom: 1em; }
@@ -797,20 +894,20 @@ MEDIA QUERIES
   .gallery .list--fb-30 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
-  .gallery .list__item:nth-child(1) {
-    background-image: url("../assets/image-11.jpeg");
+  .gallery .list__link:nth-child(1) {
+    background-image: url(../assets/image-11.jpeg);
     background-size: cover; }
-  .gallery .list__item:nth-child(2) {
-    background-image: url("../assets/image-12.jpeg");
+  .gallery .list__link:nth-child(2) {
+    background-image: url(../assets/image-12.jpeg);
     background-size: cover; }
-  .gallery .list__item:nth-child(3) {
-    background-image: url("../assets/image-13.jpeg");
+  .gallery .list__link:nth-child(3) {
+    background-image: url(../assets/image-13.jpeg);
     background-size: cover; }
-  .gallery .list__item:nth-child(4) {
-    background-image: url("../assets/image-14.jpeg");
+  .gallery .list__link:nth-child(4) {
+    background-image: url(../assets/image-14.jpeg);
     background-size: cover; }
-  .gallery .list__item:nth-child(5) {
-    background-image: url("../assets/image-5.jpeg");
+  .gallery .list__link:nth-child(5) {
+    background-image: url(../assets/image-5.jpeg);
     background-size: cover; }
   .gallery .list--fb-30 {
     -ms-flex-preferred-size: 100%;
@@ -820,10 +917,7 @@ MEDIA QUERIES
     padding: 0.5em; }
     .gallery .list__item--dark-bg:hover {
       background-color: transparent;
-      padding: 2em;
-      -webkit-transition: 0.3s ease-in-out;
-      -o-transition: 0.3s ease-in-out;
-      transition: 0.3s ease-in-out; }
+      padding: 2em; }
   .gallery .gallery-container {
     display: none; }
   .social-media {
@@ -837,6 +931,10 @@ MEDIA QUERIES
     margin-top: 1em; }
     .social-media__icon {
       margin-bottom: 0; } }
+
+@media all and (max-height: 620px) {
+  .greeting {
+    top: 45%; } }
 
 @media all and (max-width: 550px), all and (max-height: 400px) {
   html {
