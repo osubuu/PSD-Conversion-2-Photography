@@ -137,7 +137,6 @@ HEADER
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 
   &--col {
     flex-direction: column;
@@ -153,6 +152,10 @@ HEADER
     &:checked + .navigation {
       display: flex;
     }
+
+    // &:checked + .greeting {
+    //   top: 45%;
+    // }
   }
 
   &__toggle-icon {
@@ -251,7 +254,7 @@ SERVICES
     }
 
     &--dark-bg:hover {
-      background-color: $hover-bg-color-2;
+      background-color: rgba($hover-bg-color-2, $hover-bg-color-1-alpha);
     }
   }
 
@@ -341,6 +344,10 @@ SAMPLE SHOOTS
     &--right {
       right: -27.5%;
     }
+  }
+
+  &--max-width-73 {
+    max-width: 73px;
   }
 }
 
