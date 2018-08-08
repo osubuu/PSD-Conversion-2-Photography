@@ -200,6 +200,14 @@
   }
 
   .gallery {
+    .wrapper--flex-row {
+      flex-direction: column;
+    }
+
+    .section-title {
+      display: block;
+    }
+
     .list {
       &--fb-30 {
         flex-basis: 100%;
