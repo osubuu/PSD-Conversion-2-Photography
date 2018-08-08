@@ -405,8 +405,13 @@ SAMPLE SHOOTS
     -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
     z-index: 9999;
-    transition: 0.2s ease-in;
     transform: scale(1.02);
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 }
 
