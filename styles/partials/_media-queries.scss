@@ -1,3 +1,10 @@
+/*
+============================
+ADJUST HERO BACKGROUND
+SO WORDS ARE OVER THE OCEAN
+AND SKY
+===========================
+*/
 @media all and (max-width: 1275px), all and (max-height: 900px) {
   .header {
     background-position: right top;
@@ -5,6 +12,14 @@
   }
 }
 
+/*
+============================
+PRESENT LIST OF SERVICES
+VERTICALLY
++
+CERTAIN FONT-SIZE ADJ.
+===========================
+*/
 @media all and (max-width: 1150px) {
   .services {
     .list {
@@ -44,16 +59,40 @@
   }
 }
 
+/*
+============================
+OVERALL FONT-SIZE DECREASE
+TO ACCOMODATE
+===========================
+*/
 @media all and (max-height: 900px) and (max-width: 1400px) {
   html {
     font-size: 57.5%;
   }
 }
 
+/*
+============================
+HIDE TOP NAVIGATION MENU AND
+PRESENT TOGGLE SWITCH INSTEAD
++
+CENTER GREETING MESSAGE
++
+HIDE SAMPLE SHOOTS
++
+DISPLAY CONTACT SECTION
+VERTICALLY & REMOVE BOTTOM
+NAVIGATION
++
+DISPLAY INSTAGRAM PICTURES
+ON ONE SINGLE LINE
+===========================
+*/
 @media all and (max-width: 900px) {
   html {
     font-size: 55%;
   }
+
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -120,6 +159,13 @@
   }
 }
 
+/*
+============================
+OVERALL INCREASE OF WRAPPER
+WIDTH TO ACCOMODATE SMALLER
+DEVICES
+===========================
+*/
 @media all and (max-width: 750px) {
   .wrapper {
     max-width: 85%;
@@ -146,6 +192,11 @@
   }
 }
 
+/*
+============================
+SMALL PADDING ADJUSTMENT
+===========================
+*/
 @media all and (max-width: 650px) {
   .latest-news {
     .image-container__description {
@@ -156,6 +207,20 @@
   }
 }
 
+/*
+============================
+FONT-SIZE & PADDING ADJ.
++
+DISPLAY LATEST NEWS VERTICALLY
++
+REMOVE LARGE DISPLAY PICTURES
+IN GALLERY AND PUT THEM
+AS BACKGROUNDS FOR
+GALLERY TYPES OF PICTURES
++
+PUT SOCIAL MEDIA ICONS AT BOTTOM
+===========================
+*/
 @media all and (max-width: 600px) {
   .content {
     font-size: 2rem;
@@ -271,18 +336,36 @@
   }
 }
 
+/*
+============================
+GIVE MORE SPACE FOR GREETING
+MESSAGE ON SMALLER DEVICES
+===========================
+*/
 @media all and (max-height: 620px) {
   .greeting {
     top: 45%;
   }
 }
 
+/*
+============================
+OVERALL FONT-SIZE DECREASE
+TO ACCOMODATE SMALLER DEVICES
+===========================
+*/
 @media all and (max-width: 550px), all and (max-height: 400px) {
   html {
     font-size: 50%;
   }
 }
 
+/*
+============================
+RE-DISPLAY INSTAGRAM PICTURES
+ON TWO ROWS
+===========================
+*/
 @media all and (max-width: 500px) {
   .contact {
     .gallery-container--flex-wrap {
@@ -298,6 +381,11 @@
   }
 }
 
+/*
+============================
+REMOVE INSTAGRAM PICTURES
+===========================
+*/
 @media all and (max-width: 450px) {
   .contact {
     .content-container:nth-child(3) {
