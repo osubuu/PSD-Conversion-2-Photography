@@ -310,9 +310,13 @@ PUT SOCIAL MEDIA ICONS AT BOTTOM
           0 -0.8px black;
         padding: 0.5em;
 
-        &--dark-bg:hover {
-          background-color: transparent;
-          padding: 2em;
+        &--dark-bg {
+          transition: 0.3s ease-in-out;
+
+          &:hover {
+            background-color: transparent;
+            padding: 2em;
+          }
         }
       }
     }

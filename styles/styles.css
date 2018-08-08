@@ -203,15 +203,14 @@ body {
 .content {
   font-size: 2.4rem; }
   .content--small, .email-form__input {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    line-height: 2.6rem; }
   .content--slightly-smaller {
-    font-size: 1.7rem;
-    font-weight: 400; }
+    font-size: 1.7rem; }
   .content--light-grey {
     color: #efefef; }
   .content--lato {
-    font-family: "Lato";
-    line-height: 2.6rem; }
+    font-family: "Lato"; }
 
 .lesser-title {
   font-size: 2.3rem;
@@ -264,6 +263,10 @@ img {
   width: 100%; }
 
 /* WRAPPER */
+.large-wrapper {
+  max-width: 2400px;
+  margin: 0 auto; }
+
 .wrapper {
   max-width: 80%;
   margin: 0 auto; }
@@ -491,9 +494,9 @@ SERVICES
     .list__item--left {
       text-align: left; }
     .list__item--dark-bg {
-      -webkit-transition: 0.3s ease-in-out;
-      -o-transition: 0.3s ease-in-out;
-      transition: 0.3s ease-in-out;
+      -webkit-transition: 0.1s;
+      -o-transition: 0.1s;
+      transition: 0.1s;
       padding: 1 em; }
     .list__item--dark-bg:hover {
       background-color: rgba(42, 42, 42, 0.55); }
@@ -518,37 +521,8 @@ SAMPLE SHOOTS
   display: -ms-flexbox;
   display: flex; }
 
-.sample-shoots .image-container:hover,
-.latest-news .image-container:hover,
-.gallery .image-container:hover,
-.contact .image-container:hover {
-  /* whyus's CSS code for background hover effect:
-    https://jsfiddle.net/fr243agf/
-    */
-  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
-  -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
-  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
-  -webkit-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  transform: scale(1.02);
-  z-index: 9999; }
-
-
-.contact .image-container:hover {
-  -webkit-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-  transform: scale(1.25); }
-
 .image-container {
   position: relative; }
-  .image-container:hover .image-container__description,
-  .image-container:hover .image-container__description--white {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
   .image-container--fb-50 {
     -ms-flex-preferred-size: 48%;
     flex-basis: 48%; }
@@ -568,6 +542,9 @@ SAMPLE SHOOTS
     position: absolute;
     left: 0;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -581,7 +558,7 @@ SAMPLE SHOOTS
     text-align: center;
     background-color: rgba(42, 42, 42, 0.55);
     color: #e6e2e2;
-    display: none;
+    visibility: hidden;
     cursor: pointer; }
     .image-container__description--white {
       color: #ffffff; }
@@ -605,6 +582,35 @@ SAMPLE SHOOTS
       cursor: pointer; }
   .image-container--max-width-73 {
     max-width: 73px; }
+
+.sample-shoots .image-container:hover,
+.latest-news .image-container:hover,
+.gallery .image-container:hover,
+.contact .image-container:hover {
+  /* whyus's CSS code for background hover effect:
+    https://jsfiddle.net/fr243agf/
+    */
+  -webkit-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.34);
+  z-index: 9999;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02); }
+  .sample-shoots .image-container:hover .image-container__description,
+  .latest-news .image-container:hover .image-container__description,
+  .gallery .image-container:hover .image-container__description,
+  .contact .image-container:hover .image-container__description {
+    visibility: visible; }
+
+
+.contact .image-container:hover {
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25); }
 
 .content--padding {
   padding: 3% 20%; }
@@ -1026,9 +1032,13 @@ PUT SOCIAL MEDIA ICONS AT BOTTOM
   .gallery .list__item {
     text-shadow: -0.8px 0 black, 0 0.8px black, 0.8px 0 black, 0 -0.8px black;
     padding: 0.5em; }
-    .gallery .list__item--dark-bg:hover {
-      background-color: transparent;
-      padding: 2em; }
+    .gallery .list__item--dark-bg {
+      -webkit-transition: 0.3s ease-in-out;
+      -o-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
+      .gallery .list__item--dark-bg:hover {
+        background-color: transparent;
+        padding: 2em; }
   .gallery .gallery-container {
     display: none; }
   .social-media {
