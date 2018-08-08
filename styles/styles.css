@@ -381,10 +381,10 @@ HEADER
     transform: translateY(-50%);
     cursor: pointer; }
     .nav__toggle-icon:hover {
-      color: #285d64;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
-      transition: 0.3s; }
+      transition: 0.3s;
+      color: #285d64; }
   .nav__mobile-top-container {
     width: 100%;
     position: relative; }
@@ -726,21 +726,38 @@ CONTACT
     transition: 0.3s; }
 
 .email-form {
-  margin-top: 0.5em; }
+  margin-top: 0.5em;
+  border: 1px solid #2a2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1% 5% 1% 2%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%; }
+  .email-form:focus-within {
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    border-width: 1.5px;
+    border-color: #3c8d97; }
   .email-form__input {
-    width: 100%;
-    padding: 1% 15% 1% 2%;
-    background-image: url(../assets/paper-plane-solid.svg);
-    background-repeat: no-repeat;
-    background-size: 5%;
-    background-position: 94% 50%;
-    border: 1px solid #2a2a2a; }
-    .email-form__input:focus {
+    width: 90%;
+    border: none; }
+  .email-form__button {
+    font-size: 60%;
+    background: none;
+    outline: none;
+    border: none; }
+    .email-form__button:hover {
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s;
-      border-width: 1.5px;
-      border-color: #3c8d97; }
+      color: #3c8d97; }
 
 .social-media {
   position: absolute;
@@ -898,9 +915,9 @@ ON ONE SINGLE LINE
         padding-right: 0em; }
     .contact .content-container--flex-row .content-container:nth-child(2) {
       margin-bottom: 1em; }
-  .contact .email-form__input {
-    width: 60%;
-    background-size: 4%; }
+  .contact .email-form {
+    margin: 0 auto;
+    width: 60%; }
   .contact .gallery-container--flex-wrap {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap; }
@@ -1050,6 +1067,8 @@ TO ACCOMODATE SMALLER DEVICES
 ============================
 RE-DISPLAY INSTAGRAM PICTURES
 ON TWO ROWS
++
+REMOVE REVIEWS SECTION
 ===========================
 */
 @media all and (max-width: 500px) {
@@ -1059,8 +1078,10 @@ ON TWO ROWS
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .contact .email-form__input {
-    width: 100%; } }
+  .contact .email-form {
+    width: 100%; }
+  .reviews {
+    display: none; } }
 
 /*
 ============================

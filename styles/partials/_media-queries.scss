@@ -143,10 +143,8 @@ ON ONE SINGLE LINE
     }
 
     .email-form {
-      &__input {
-        width: 60%;
-        background-size: 4%;
-      }
+      margin: 0 auto;
+      width: 60%;
     }
 
     .gallery-container--flex-wrap {
@@ -364,6 +362,8 @@ TO ACCOMODATE SMALLER DEVICES
 ============================
 RE-DISPLAY INSTAGRAM PICTURES
 ON TWO ROWS
++
+REMOVE REVIEWS SECTION
 ===========================
 */
 @media all and (max-width: 500px) {
@@ -374,10 +374,12 @@ ON TWO ROWS
     }
 
     .email-form {
-      &__input {
-        width: 100%;
-      }
+      width: 100%;
     }
+  }
+
+  .reviews {
+    display: none;
   }
 }
 
