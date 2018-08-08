@@ -68,11 +68,11 @@ body {
 
   &--small {
     font-size: $font-size-9;
+    line-height: 2.6rem;
   }
 
   &--slightly-smaller {
     font-size: $font-size-8;
-    font-weight: 400;
   }
 
   &--light-grey {
@@ -81,7 +81,6 @@ body {
 
   &--lato {
     font-family: "Lato";
-    line-height: 2.6rem;
   }
 }
 

@@ -25,459 +25,460 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="wrapper wrapper--flex-col">
-      <nav class="nav">
-        <div class="nav__mobile-top-container">
+  <div class="large-wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="wrapper wrapper--flex-col">
+        <nav class="nav">
+          <div class="nav__mobile-top-container">
+            <a href="index.html">
+              <h2 class="title title--bold">Photography</h2>
+            </a>
+            <label class="nav__toggle-icon" for="toggle">
+              <i class="fas fa-bars "></i>
+            </label>
+          </div>
+          <input class="nav__checkbox" type="checkbox" id="toggle" name="toggle" autocomplete="off">
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="index.html">
+                <h4 class="subtitle subtitle--bold">Home</h4>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">
+                <h4 class="subtitle subtitle--bold">Gallery</h4>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">
+                <h4 class="subtitle subtitle--bold">Blogs</h4>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">
+                <h4 class="subtitle subtitle--bold">Bookings</h4>
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="#">
+                <h4 class="subtitle subtitle--bold">About</h4>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="greeting">
+          <h1 class="main-title main-title--bold ">Welcome</h1>
+          <h4 class="subtitle subtitle--bold ">To my photography website</h3>
+            <a href="#main-content">
+              <button class="button">
+                <h4 class="subtitle subtitle--bold ">Start</h4>
+              </button>
+            </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- WELCOME  -->
+    <section class="welcome ">
+      <div class="wrapper wrapper--padding ">
+        <h2 class="section-title section-title--bold ">Welcome to
+          <span class="section-title section-title--bold section-title--blue ">photography</span>
+        </h2>
+        <p class="content content--horiz-padding ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam totam quaerat. Recusandae nesciunt asperiores
+          perspiciatis hic suscipit sint sapiente repudiandae esse ut sit id sed deserunt, ratione cupiditate at. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#">
+          <button class="button button--add-margin ">
+            <h4 class="subtitle subtitle--bold">More</h4>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- SERVICES  -->
+    <section class="services " id="main-content">
+      <div class="wrapper wrapper--padding ">
+        <h2 class="section-title section-title--bold ">Services</h2>
+        <ul class="list list--evenly ">
+          <li class="list__item list__item--fb-30 ">
+            <i class="fas fa-camera list__icon "></i>
+            <h3 class="title title--bold ">Portraits</h3>
+            <p class="content content--small content--horiz-padding ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto accusamus facere laboriosam laudantium
+              debitis dolorum magnam nesciunt.</p>
+          </li>
+          <li class="list__item list__item--fb-30 ">
+            <i class="fas fa-leaf list__icon "></i>
+            <h3 class="title title--bold ">Scenery</h3>
+            <p class="content content--small content--horiz-padding ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto accusamus facere laboriosam laudantium
+              debitis dolorum magnam nesciunt.</p>
+          </li>
+          <li class="list__item list__item--fb-30 ">
+            <i class="fas fa-heart list__icon "></i>
+            <h3 class="title title--bold ">Weddings</h3>
+            <p class="content content--small content--horiz-padding ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto accusamus facere laboriosam laudantium
+              debitis dolorum magnam nesciunt.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS  -->
+    <section class="testimonials ">
+      <div class="wrapper wrapper--flex-col wrapper--padding ">
+        <h2 class="section-title section-title--bold ">Testimonials</h2>
+        <div class="content-container content-container--flex-row ">
+          <figure class="image-container image-container--fb-40 ">
+            <img src="assets/image-2.jpeg" alt="a smiling woman in a field, wearing a skirt and a long-sleeved top">
+          </figure>
+          <div class="content-container content-container--margin-left ">
+            <h3 class="title title--bold ">Kate Sampson</h3>
+            <p class="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptate ad, numquam aut exercitationem, natus
+              porro voluptates aliquam voluptatibus pariatur et molestiae, eaque inventore?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAMPLE SHOOTS  -->
+    <section class="sample-shoots ">
+      <figure class="image-container ">
+        <img src="assets/image-3.jpeg " alt="a woman with short red hair shaking her head horizontally, splashing water at the camera">
+        <a href="#">
+          <figcaption class="image-container__description ">
+            <h3 class="title title--bold ">Sample shoot</h3>
+            <p class="content content--small content--padding content--light-grey content--lato">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
+      <figure class="image-container ">
+        <img class="img--height" src="assets/image-4.jpeg " alt="cottage located on a small island, surrounded by forest, in the middle of a clear blue lake">
+        <a href="#">
+          <figcaption class="image-container__description ">
+            <h3 class="title title--bold ">Sample shoot</h3>
+            <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
+      <figure class="image-container ">
+        <img src="assets/image-5.jpeg " alt="view of green mountain hills from small boats docked at a beach">
+        <a href="#">
+          <figcaption class="image-container__description ">
+            <h3 class="title title--bold ">Sample shoot</h3>
+            <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
+      <figure class="image-container ">
+        <img class="img--height" src="assets/image-6.jpeg " alt="wide view of many orange city buildings located on a hill besides the ocean">
+        <a href="#">
+          <figcaption class="image-container__description ">
+            <h3 class="title title--bold ">Sample shoot</h3>
+            <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </figcaption>
+        </a>
+      </figure>
+    </section>
+
+    <!-- REVIEWS  -->
+    <section class="reviews ">
+      <div class="wrapper wrapper--flex-col wrapper--padding wrapper--content-center ">
+        <h2 class="section-title section-title--bold ">Happy clients</h2>
+        <figure class="image-container ">
+          <img src="assets/image-7.jpeg " alt="a woman with long brown hair, holding her right hand against her right cheek as she looks into the camera">
+          <figcaption>
+            <i class="image-container__arrow image-container__arrow--left fa fa-angle-left "></i>
+            <i class="image-container__arrow image-container__arrow--right fa fa-angle-right "></i>
+          </figcaption>
+        </figure>
+        <p class="content content--padding ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus vel magni architecto exercitationem dignissimos
+          nihil fuga dolores quos recusandae, eligendi obcaecati voluptas! Ea libero quo explicabo molestias</p>
+        <h5 class="lesser-title ">~ Mary Jane ~</h5>
+      </div>
+    </section>
+
+    <!-- LATEST NEWS  -->
+    <section class="latest-news ">
+      <div class="wrapper wrapper--flex-col wrapper--padding ">
+        <h2 class="section-title section-title--bold ">Latest news</h2>
+        <ul class="list list--between ">
+          <li class="list__item list__item--left list__item--fb-30 ">
+            <figure class="image-container ">
+              <img src="assets/image-8.jpeg " alt="angled aerial view of a port city, with the coastal road in view as well as the ocean">
+              <a href="#">
+                <figcaption class="image-container__description ">
+                  <h3 class="title title--bold ">Sample shoot</h3>
+                  <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </figcaption>
+              </a>
+            </figure>
+            <h4 class="subtitle subtitle--bold subtitle--top-margin ">My trip to Italy</h4>
+            <a href="#">
+              <h4 class="subtitle subtitle--bold subtitle--blue ">Read more >></h4>
+            </a>
+          </li>
+          <li class="list__item list__item--left list__item--fb-30 ">
+            <figure class="image-container ">
+              <img src="assets/image-9.jpeg " alt="picture of two straw chairs and straw baskets, accompanied by blue patterned pillows that match the color of the door and window in the back">
+              <a href="#">
+                <figcaption class="image-container__description ">
+                  <h3 class="title title--bold ">Sample shoot</h3>
+                  <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </figcaption>
+              </a>
+            </figure>
+            <h4 class="subtitle subtitle--bold subtitle--top-margin ">Greece photoshoot</h4>
+            <a href="#">
+              <h4 class="subtitle subtitle--bold subtitle--blue ">Read more >></h4>
+            </a>
+          </li>
+          <li class="list__item list__item--left list__item--fb-30 ">
+            <figure class="image-container ">
+              <img src="assets/image-10.jpeg " alt="back of the head of a long haired woman dragging the camera owner by the hand through a series of stairs in between colorful vivid buildings">
+              <a href="#">
+                <figcaption class="image-container__description ">
+                  <h3 class="title title--bold ">Sample shoot</h3>
+                  <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </figcaption>
+              </a>
+            </figure>
+            <h4 class="subtitle subtitle--bold subtitle--top-margin ">Travelling with your partner</h4>
+            <a href="#">
+              <h4 class="subtitle subtitle--bold subtitle--blue ">Read more >></h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUESTION  -->
+    <section class="question ">
+      <div class="wrapper wrapper--content-center wrapper--padding ">
+        <h2 class="section-title section-title--bold ">ASK A QUESTION</h2>
+        <form action="POST " class="text-form ">
+          <label class="visuallyhidden " for="text ">question-text</label>
+          <input class="text-form__input " type="text" name="question " id="question " autocomplete="off" placeholder="your message"
+            required>
+          <label class="visuallyhidden " for="question-submit ">Submit Button</label>
+          <button class="text-form__submit " id="text-form__submit " name="question-submit ">
+            <h4 class="subtitle subtitle--bold ">Send</h4>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- GALLERY  -->
+    <section class="gallery ">
+      <div class="wrapper wrapper--flex-row wrapper--padding wrapper--space-between ">
+        <h2 class="section-title section-title--bold ">Gallery</h2>
+        <ul class="list list--flex-col list--fb-30 list--bg list--evenly ">
+          <a href="#" class="list__link ">
+            <li class="list__item list__item--col-center list__item--dark-bg ">
+              <h3 class="title title--white ">Latest shoots</h3>
+            </li>
+          </a>
+          <a href="#" class="list__link ">
+            <li class="list__item list__item--col-center list__item--dark-bg ">
+              <h3 class="title title--white ">All</h3>
+            </li>
+          </a>
+          <a href="#" class="list__link ">
+            <li class="list__item list__item--col-center list__item--dark-bg ">
+              <h3 class="title title--white ">Weddings</h3>
+            </li>
+          </a>
+          <a href="#" class="list__link ">
+            <li class="list__item list__item--col-center list__item--dark-bg ">
+              <h3 class="title title--white ">Scenery</h3>
+            </li>
+          </a>
+          <a href="#" class="list__link ">
+            <li class="list__item list__item--col-center list__item--dark-bg ">
+              <h3 class="title title--white ">Portraits</h3>
+            </li>
+          </a>
+        </ul>
+        <div class="gallery-container gallery-container--flex-wrap gallery-container--fb-66 gallery-container--space-between ">
+          <figure class="image-container image-container--fb-50 image-container--margin-bot ">
+            <img src="assets/image-11.jpeg " alt="view of a waterfall from its top, looking down into the river">
+            <a href="#">
+              <figcaption class="image-container__description image-container__description--white ">
+                <h3 class="title title--bold ">Sample Shoot</h3>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="image-container image-container--fb-50 image-container--margin-bot ">
+            <img class="img--height " src="assets/image-12.jpeg " alt="grim view of a coastal city from the mountains located on the innerside of the city, with the ocean in the back">
+            <a href="#">
+              <figcaption class="image-container__description image-container__description--white ">
+                <h3 class="title title--bold ">Sample shoot</h3>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="image-container image-container--fb-50 ">
+            <img src="assets/image-13.jpeg " alt="aerial view of a sunny day at the beach, on which many people are relaxing">
+            <a href="#">
+              <figcaption class="image-container__description image-container__description--white ">
+                <h3 class="title title--bold ">Sample shoot</h3>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="image-container image-container--fb-50 ">
+            <img src="assets/image-14.jpeg " alt="aerial view of rocky terrain coasts by the ocean">
+            <a href="#">
+              <figcaption class="image-container__description image-container__description--white ">
+                <h3 class="title title--bold ">Sample shoot</h3>
+              </figcaption>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT  -->
+    <section class="contact">
+      <div class="wrapper wrapper--flex-col wrapper--padding wrapper--less-padding-bot ">
+        <div class="content-container content-container--flex-row content-container--flex-start ">
+          <div class="content-container content-container--right-padding ">
+            <h3 class="title title--margin-bot ">Contact</h3>
+            <div class="content-container ">
+              <p class="content content--slightly-smaller ">
+                <i class="far fa-envelope contact__icon "></i> info@delicate.com</p>
+              <p class="content content--slightly-smaller ">
+                <i class="fas fa-phone contact__icon "></i> 123 456-7890</p>
+              <p class="content content--slightly-smaller ">
+                <i class="fas fa-map-marker-alt contact__icon "></i> Toronto, Ontario</p>
+              <form action="POST" class="email-form">
+                <label class="visuallyhidden" for="email ">footerEmail</label>
+                <input class="email-form__input" type="email " name="email " id="email " autocomplete="off" placeholder="your email" required>
+                <button class="email-form__button" type="submit" name="emailButton" id="emailButton">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="content-container content-container--right-padding ">
+            <h3 class="title title--margin-bot ">About</h3>
+            <div class="content-container ">
+              <p class="content content--small ">We are creative and modern web studio. Newest technologies it's about us. We keep up with our time, your web
+                site will contain all of the best and modern trends. We are making web since 2005.
+                <br>Huge experience - is a best helper.
+              </p>
+            </div>
+          </div>
+          <div class="content-container ">
+            <h3 class="title title--margin-bot ">Instagram</h3>
+            <div class="gallery-container gallery-container--flex-wrap ">
+              <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
+                <img src="assets/image-15.jpeg " alt="aerial view of a kayak in the middle of a clear beach">
+                <figcaption class="image-container__description ">
+                  <i class="fab fa-instagram "></i>
+                </figcaption>
+              </figure>
+              <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
+                <img src="assets/image-16.jpeg " alt="outside view of a colorful orange house on which laundry is being dried">
+                <figcaption class="image-container__description ">
+                  <i class="fab fa-instagram "></i>
+                </figcaption>
+              </figure>
+              <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
+                <img src="assets/image-17.jpeg " alt="inner picture of boats docked on a lake, with a view of the mountains in the back">
+                <figcaption class="image-container__description ">
+                  <i class="fab fa-instagram "></i>
+                </figcaption>
+              </figure>
+              <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
+                <img src="assets/image-18.jpeg " alt="a green-framed bicycle with bright red wheels">
+                <figcaption class="image-container__description ">
+                  <i class="fab fa-instagram "></i>
+                </figcaption>
+              </figure>
+              <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
+                <img src="assets/image-19.jpeg " alt="aerial view of rocky coasts">
+                <figcaption class="image-container__description ">
+                  <i class="fab fa-instagram "></i>
+                </figcaption>
+              </figure>
+              <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
+                <img src="assets/image-20.jpeg " alt="view of a narrow street with color buildings">
+                <figcaption class="image-container__description ">
+                  <i class="fab fa-instagram "></i>
+                </figcaption>
+              </figure>
+              <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
+                <img src="assets/image-21.jpeg " alt="close-up of an old red car in the middle of a city">
+                <figcaption class="image-container__description ">
+                  <i class="fab fa-instagram "></i>
+                </figcaption>
+              </figure>
+              <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
+                <img src="assets/image-22.jpeg " alt="view of a road between docked boats and color pastel colored buildings">
+                <figcaption class="image-container__description ">
+                  <i class="fab fa-instagram "></i>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <nav class="nav nav--col nav--margin-top ">
           <a href="index.html">
             <h2 class="title title--bold">Photography</h2>
           </a>
-          <label class="nav__toggle-icon" for="toggle">
-            <i class="fas fa-bars "></i>
-          </label>
-        </div>
-        <input class="nav__checkbox" type="checkbox" id="toggle" name="toggle" autocomplete="off">
-        <ul class="navigation">
-          <li class="navigation__item">
-            <a href="index.html">
-              <h4 class="subtitle subtitle--bold">Home</h4>
+          <ul class="navigation ">
+            <li class="navigation__item ">
+              <a href="index.html">
+                <h4 class="subtitle subtitle--bold">Home</h4>
+              </a>
+            </li>
+            <li class="navigation__item ">
+              <a href="index.html">
+                <h4 class="subtitle subtitle--bold">Demos</h4>
+              </a>
+            </li>
+            <li class="navigation__item ">
+              <a href="index.html">
+                <h4 class="subtitle subtitle--bold">Blogs</h4>
+              </a>
+            </li>
+            <li class="navigation__item ">
+              <a href="index.html">
+                <h4 class="subtitle subtitle--bold">Pages</h4>
+              </a>
+            </li>
+            <li class="navigation__item ">
+              <a href="index.html">
+                <h4 class="subtitle subtitle--bold">About us</h4>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social-media ">
+          <li class="social-media__icon ">
+            <a href="#">
+              <i class="fab fa-facebook-square "></i>
             </a>
           </li>
-          <li class="navigation__item">
+          <li class="social-media__icon ">
             <a href="#">
-              <h4 class="subtitle subtitle--bold">Gallery</h4>
+              <i class="fab fa-instagram "></i>
             </a>
           </li>
-          <li class="navigation__item">
+          <li class="social-media__icon ">
             <a href="#">
-              <h4 class="subtitle subtitle--bold">Blogs</h4>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="#">
-              <h4 class="subtitle subtitle--bold">Bookings</h4>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="#">
-              <h4 class="subtitle subtitle--bold">About</h4>
+              <i class="fab fa-pinterest-p "></i>
             </a>
           </li>
         </ul>
-      </nav>
-      <div class="greeting">
-        <h1 class="main-title main-title--bold ">Welcome</h1>
-        <h4 class="subtitle subtitle--bold ">To my photography website</h3>
-          <a href="#main-content">
-            <button class="button">
-              <h4 class="subtitle subtitle--bold ">Start</h4>
-            </button>
-          </a>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <!-- WELCOME  -->
-  <section class="welcome ">
-    <div class="wrapper wrapper--padding ">
-      <h2 class="section-title section-title--bold ">Welcome to
-        <span class="section-title section-title--bold section-title--blue ">photography</span>
-      </h2>
-      <p class="content content--horiz-padding ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam totam quaerat. Recusandae nesciunt asperiores
-        perspiciatis hic suscipit sint sapiente repudiandae esse ut sit id sed deserunt, ratione cupiditate at. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit.</p>
-      <a href="#">
-        <button class="button button--add-margin ">
-          <h4 class="subtitle subtitle--bold">More</h4>
-        </button>
-      </a>
-    </div>
-  </section>
-
-  <!-- SERVICES  -->
-  <section class="services " id="main-content">
-    <div class="wrapper wrapper--padding ">
-      <h2 class="section-title section-title--bold ">Services</h2>
-      <ul class="list list--evenly ">
-        <li class="list__item list__item--fb-30 ">
-          <i class="fas fa-camera list__icon "></i>
-          <h3 class="title title--bold ">Portraits</h3>
-          <p class="content content--small content--horiz-padding ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto accusamus facere laboriosam laudantium debitis
-            dolorum magnam nesciunt.</p>
-        </li>
-        <li class="list__item list__item--fb-30 ">
-          <i class="fas fa-leaf list__icon "></i>
-          <h3 class="title title--bold ">Scenery</h3>
-          <p class="content content--small content--horiz-padding ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto accusamus facere laboriosam laudantium debitis
-            dolorum magnam nesciunt.</p>
-        </li>
-        <li class="list__item list__item--fb-30 ">
-          <i class="fas fa-heart list__icon "></i>
-          <h3 class="title title--bold ">Weddings</h3>
-          <p class="content content--small content--horiz-padding ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus iusto accusamus facere laboriosam laudantium debitis
-            dolorum magnam nesciunt.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS  -->
-  <section class="testimonials ">
-    <div class="wrapper wrapper--flex-col wrapper--padding ">
-      <h2 class="section-title section-title--bold ">Testimonials</h2>
-      <div class="content-container content-container--flex-row ">
-        <figure class="image-container image-container--fb-40 ">
-          <img src="assets/image-2.jpeg" alt="a smiling woman in a field, wearing a skirt and a long-sleeved top">
-        </figure>
-        <div class="content-container content-container--margin-left ">
-          <h3 class="title title--bold ">Kate Sampson</h3>
-          <p class="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptate ad, numquam aut exercitationem, natus
-            porro voluptates aliquam voluptatibus pariatur et molestiae, eaque inventore?</p>
-        </div>
+    <!-- FOOTER  -->
+    <footer class="footer ">
+      <div class="wrapper ">
+        <h6 class="smallest-title ">2017 All rights reserved &#9400</h6>
       </div>
-    </div>
-  </section>
-
-  <!-- SAMPLE SHOOTS  -->
-  <section class="sample-shoots ">
-    <figure class="image-container ">
-      <img src="assets/image-3.jpeg " alt="a woman with short red hair shaking her head horizontally, splashing water at the camera">
-      <a href="#">
-        <figcaption class="image-container__description ">
-          <h3 class="title title--bold ">Sample shoot</h3>
-          <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </figcaption>
-      </a>
-    </figure>
-    <figure class="image-container ">
-      <img class="img--height" src="assets/image-4.jpeg " alt="cottage located on a small island, surrounded by forest, in the middle of a clear blue lake">
-      <a href="#">
-        <figcaption class="image-container__description ">
-          <h3 class="title title--bold ">Sample shoot</h3>
-          <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </figcaption>
-      </a>
-    </figure>
-    <figure class="image-container ">
-      <img src="assets/image-5.jpeg " alt="view of green mountain hills from small boats docked at a beach">
-      <a href="#">
-        <figcaption class="image-container__description ">
-          <h3 class="title title--bold ">Sample shoot</h3>
-          <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </figcaption>
-      </a>
-    </figure>
-    <figure class="image-container ">
-      <img class="img--height" src="assets/image-6.jpeg " alt="wide view of many orange city buildings located on a hill besides the ocean">
-      <a href="#">
-        <figcaption class="image-container__description ">
-          <h3 class="title title--bold ">Sample shoot</h3>
-          <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </figcaption>
-      </a>
-    </figure>
-  </section>
-
-  <!-- REVIEWS  -->
-  <section class="reviews ">
-    <div class="wrapper wrapper--flex-col wrapper--padding wrapper--content-center ">
-      <h2 class="section-title section-title--bold ">Happy clients</h2>
-      <figure class="image-container ">
-        <img src="assets/image-7.jpeg " alt="a woman with long brown hair, holding her right hand against her right cheek as she looks into the camera">
-        <figcaption>
-          <i class="image-container__arrow image-container__arrow--left fa fa-angle-left "></i>
-          <i class="image-container__arrow image-container__arrow--right fa fa-angle-right "></i>
-        </figcaption>
-      </figure>
-      <p class="content content--padding ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus vel magni architecto exercitationem dignissimos
-        nihil fuga dolores quos recusandae, eligendi obcaecati voluptas! Ea libero quo explicabo molestias</p>
-      <h5 class="lesser-title ">~ Mary Jane ~</h5>
-    </div>
-  </section>
-
-  <!-- LATEST NEWS  -->
-  <section class="latest-news ">
-    <div class="wrapper wrapper--flex-col wrapper--padding ">
-      <h2 class="section-title section-title--bold ">Latest news</h2>
-      <ul class="list list--between ">
-        <li class="list__item list__item--left list__item--fb-30 ">
-          <figure class="image-container ">
-            <img src="assets/image-8.jpeg " alt="angled aerial view of a port city, with the coastal road in view as well as the ocean">
-            <a href="#">
-              <figcaption class="image-container__description ">
-                <h3 class="title title--bold ">Sample shoot</h3>
-                <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              </figcaption>
-            </a>
-          </figure>
-          <h4 class="subtitle subtitle--bold subtitle--top-margin ">My trip to Italy</h4>
-          <a href="#">
-            <h4 class="subtitle subtitle--bold subtitle--blue ">Read more >></h4>
-          </a>
-        </li>
-        <li class="list__item list__item--left list__item--fb-30 ">
-          <figure class="image-container ">
-            <img src="assets/image-9.jpeg " alt="picture of two straw chairs and straw baskets, accompanied by blue patterned pillows that match the color of the door and window in the back">
-            <a href="#">
-              <figcaption class="image-container__description ">
-                <h3 class="title title--bold ">Sample shoot</h3>
-                <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              </figcaption>
-            </a>
-          </figure>
-          <h4 class="subtitle subtitle--bold subtitle--top-margin ">Greece photoshoot</h4>
-          <a href="#">
-            <h4 class="subtitle subtitle--bold subtitle--blue ">Read more >></h4>
-          </a>
-        </li>
-        <li class="list__item list__item--left list__item--fb-30 ">
-          <figure class="image-container ">
-            <img src="assets/image-10.jpeg " alt="back of the head of a long haired woman dragging the camera owner by the hand through a series of stairs in between colorful vivid buildings">
-            <a href="#">
-              <figcaption class="image-container__description ">
-                <h3 class="title title--bold ">Sample shoot</h3>
-                <p class="content content--small content--padding content--light-grey content--lato ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-              </figcaption>
-            </a>
-          </figure>
-          <h4 class="subtitle subtitle--bold subtitle--top-margin ">Travelling with your partner</h4>
-          <a href="#">
-            <h4 class="subtitle subtitle--bold subtitle--blue ">Read more >></h4>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- QUESTION  -->
-  <section class="question ">
-    <div class="wrapper wrapper--content-center wrapper--padding ">
-      <h2 class="section-title section-title--bold ">ASK A QUESTION</h2>
-      <form action="POST " class="text-form ">
-        <label class="visuallyhidden " for="text ">question-text</label>
-        <input class="text-form__input " type="text" name="question " id="question " autocomplete="off" placeholder="your message"
-          required>
-        <label class="visuallyhidden " for="question-submit ">Submit Button</label>
-        <button class="text-form__submit " id="text-form__submit " name="question-submit ">
-          <h4 class="subtitle subtitle--bold ">Send</h4>
-        </button>
-      </form>
-    </div>
-  </section>
-
-  <!-- GALLERY  -->
-  <section class="gallery ">
-    <div class="wrapper wrapper--flex-row wrapper--padding wrapper--space-between ">
-      <h2 class="section-title section-title--bold ">Gallery</h2>
-      <ul class="list list--flex-col list--fb-30 list--bg list--evenly ">
-        <a href="#" class="list__link ">
-          <li class="list__item list__item--col-center list__item--dark-bg ">
-            <h3 class="title title--white ">Latest shoots</h3>
-          </li>
-        </a>
-        <a href="#" class="list__link ">
-          <li class="list__item list__item--col-center list__item--dark-bg ">
-            <h3 class="title title--white ">All</h3>
-          </li>
-        </a>
-        <a href="#" class="list__link ">
-          <li class="list__item list__item--col-center list__item--dark-bg ">
-            <h3 class="title title--white ">Weddings</h3>
-          </li>
-        </a>
-        <a href="#" class="list__link ">
-          <li class="list__item list__item--col-center list__item--dark-bg ">
-            <h3 class="title title--white ">Scenery</h3>
-          </li>
-        </a>
-        <a href="#" class="list__link ">
-          <li class="list__item list__item--col-center list__item--dark-bg ">
-            <h3 class="title title--white ">Portraits</h3>
-          </li>
-        </a>
-      </ul>
-      <div class="gallery-container gallery-container--flex-wrap gallery-container--fb-66 gallery-container--space-between ">
-        <figure class="image-container image-container--fb-50 image-container--margin-bot ">
-          <img src="assets/image-11.jpeg " alt="view of a waterfall from its top, looking down into the river">
-          <a href="#">
-            <figcaption class="image-container__description image-container__description--white ">
-              <h3 class="title title--bold ">Sample Shoot</h3>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="image-container image-container--fb-50 image-container--margin-bot ">
-          <img class="img--height " src="assets/image-12.jpeg " alt="grim view of a coastal city from the mountains located on the innerside of the city, with the ocean in the back">
-          <a href="#">
-            <figcaption class="image-container__description image-container__description--white ">
-              <h3 class="title title--bold ">Sample shoot</h3>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="image-container image-container--fb-50 ">
-          <img src="assets/image-13.jpeg " alt="aerial view of a sunny day at the beach, on which many people are relaxing">
-          <a href="#">
-            <figcaption class="image-container__description image-container__description--white ">
-              <h3 class="title title--bold ">Sample shoot</h3>
-            </figcaption>
-          </a>
-        </figure>
-        <figure class="image-container image-container--fb-50 ">
-          <img src="assets/image-14.jpeg " alt="aerial view of rocky terrain coasts by the ocean">
-          <a href="#">
-            <figcaption class="image-container__description image-container__description--white ">
-              <h3 class="title title--bold ">Sample shoot</h3>
-            </figcaption>
-          </a>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT  -->
-  <section class="contact">
-    <div class="wrapper wrapper--flex-col wrapper--padding wrapper--less-padding-bot ">
-      <div class="content-container content-container--flex-row content-container--flex-start ">
-        <div class="content-container content-container--right-padding ">
-          <h3 class="title title--margin-bot ">Contact</h3>
-          <div class="content-container ">
-            <p class="content content--slightly-smaller ">
-              <i class="far fa-envelope contact__icon "></i> info@delicate.com</p>
-            <p class="content content--slightly-smaller ">
-              <i class="fas fa-phone contact__icon "></i> 123 456-7890</p>
-            <p class="content content--slightly-smaller ">
-              <i class="fas fa-map-marker-alt contact__icon "></i> Toronto, Ontario</p>
-            <form action="POST" class="email-form">
-              <label class="visuallyhidden" for="email ">footerEmail</label>
-              <input class="email-form__input" type="email " name="email " id="email " autocomplete="off" placeholder="your email" required>
-              <button class="email-form__button" type="submit" name="emailButton" id="emailButton">
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="content-container content-container--right-padding ">
-          <h3 class="title title--margin-bot ">About</h3>
-          <div class="content-container ">
-            <p class="content content--small ">We are creative and modern web studio. Newest technologies it's about us. We keep up with our time, your web
-              site will contain all of the best and modern trends. We are making web since 2005.
-              <br>Huge experience - is a best helper.
-            </p>
-          </div>
-        </div>
-        <div class="content-container ">
-          <h3 class="title title--margin-bot ">Instagram</h3>
-          <div class="gallery-container gallery-container--flex-wrap ">
-            <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
-              <img src="assets/image-15.jpeg " alt="aerial view of a kayak in the middle of a clear beach">
-              <figcaption class="image-container__description ">
-                <i class="fab fa-instagram "></i>
-              </figcaption>
-            </figure>
-            <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
-              <img src="assets/image-16.jpeg " alt="outside view of a colorful orange house on which laundry is being dried">
-              <figcaption class="image-container__description ">
-                <i class="fab fa-instagram "></i>
-              </figcaption>
-            </figure>
-            <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
-              <img src="assets/image-17.jpeg " alt="inner picture of boats docked on a lake, with a view of the mountains in the back">
-              <figcaption class="image-container__description ">
-                <i class="fab fa-instagram "></i>
-              </figcaption>
-            </figure>
-            <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
-              <img src="assets/image-18.jpeg " alt="a green-framed bicycle with bright red wheels">
-              <figcaption class="image-container__description ">
-                <i class="fab fa-instagram "></i>
-              </figcaption>
-            </figure>
-            <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
-              <img src="assets/image-19.jpeg " alt="aerial view of rocky coasts">
-              <figcaption class="image-container__description ">
-                <i class="fab fa-instagram "></i>
-              </figcaption>
-            </figure>
-            <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
-              <img src="assets/image-20.jpeg " alt="view of a narrow street with color buildings">
-              <figcaption class="image-container__description ">
-                <i class="fab fa-instagram "></i>
-              </figcaption>
-            </figure>
-            <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
-              <img src="assets/image-21.jpeg " alt="close-up of an old red car in the middle of a city">
-              <figcaption class="image-container__description ">
-                <i class="fab fa-instagram "></i>
-              </figcaption>
-            </figure>
-            <figure class="image-container image-container--fb-25 image-container--max-width-73 ">
-              <img src="assets/image-22.jpeg " alt="view of a road between docked boats and color pastel colored buildings">
-              <figcaption class="image-container__description ">
-                <i class="fab fa-instagram "></i>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </div>
-      <nav class="nav nav--col nav--margin-top ">
-        <a href="index.html">
-          <h2 class="title title--bold">Photography</h2>
-        </a>
-        <ul class="navigation ">
-          <li class="navigation__item ">
-            <a href="index.html">
-              <h4 class="subtitle subtitle--bold">Home</h4>
-            </a>
-          </li>
-          <li class="navigation__item ">
-            <a href="index.html">
-              <h4 class="subtitle subtitle--bold">Demos</h4>
-            </a>
-          </li>
-          <li class="navigation__item ">
-            <a href="index.html">
-              <h4 class="subtitle subtitle--bold">Blogs</h4>
-            </a>
-          </li>
-          <li class="navigation__item ">
-            <a href="index.html">
-              <h4 class="subtitle subtitle--bold">Pages</h4>
-            </a>
-          </li>
-          <li class="navigation__item ">
-            <a href="index.html">
-              <h4 class="subtitle subtitle--bold">About us</h4>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="social-media ">
-        <li class="social-media__icon ">
-          <a href="#">
-            <i class="fab fa-facebook-square "></i>
-          </a>
-        </li>
-        <li class="social-media__icon ">
-          <a href="#">
-            <i class="fab fa-instagram "></i>
-          </a>
-        </li>
-        <li class="social-media__icon ">
-          <a href="#">
-            <i class="fab fa-pinterest-p "></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FOOTER  -->
-  <footer class="footer ">
-    <div class="wrapper ">
-      <h6 class="smallest-title ">2017 All rights reserved &#9400</h6>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 
 </body>
 
