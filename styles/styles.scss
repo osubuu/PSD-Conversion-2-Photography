@@ -134,7 +134,8 @@ HEADER
   background-image: url(../assets/image-1.jpeg);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  background-attachment: fixed;
+  height: 100vh;
   position: relative;
 }
 
@@ -329,6 +330,13 @@ SAMPLE SHOOTS
   }
 }
 
+.contact {
+  .image-container:hover {
+    @extend .image-container:hover;
+    transform: scale(1.25);
+  }
+}
+
 .image-container {
   position: relative;
 
@@ -481,10 +489,18 @@ QUESTION
     @extend .subtitle--reset;
     background: none;
 
-    &[type="text"]::placeholder {
+    &::placeholder {
       @extend .subtitle;
       opacity: 1;
       font-weight: 700;
+    }
+
+    &:focus {
+      border-top-width: 1.5px;
+      border-bottom-width: 1.5px;
+      transition: all 0.25s ease-in-out;
+      transform: scale(1.03);
+      z-index: 9999;
     }
   }
 
@@ -493,7 +509,6 @@ QUESTION
     @extend .button--add-margin;
   }
 }
-
 /*
 ============================================================
 GALLERY
@@ -502,6 +517,10 @@ GALLERY
 
 .gallery {
   background-color: $background-color-3;
+
+  .section-title {
+    display: none;
+  }
 }
 
 .gallery-container {
@@ -555,6 +574,7 @@ CONTACT
 
     &:focus {
       transition: 0.3s;
+      border-width: 1.5px;
       border-color: $extra-color-1;
     }
   }
@@ -572,6 +592,7 @@ CONTACT
     &:hover {
       .fab {
         transition: 0.3s;
+        transform: scale(1.2);
       }
 
       .fa-instagram {

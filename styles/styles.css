@@ -178,19 +178,19 @@ body {
   .title--bold {
     font-weight: 700; }
 
-.subtitle, .text-form__input[type="text"]::-webkit-input-placeholder {
+.subtitle, .text-form__input::-webkit-input-placeholder {
   font-size: 2rem;
   text-transform: uppercase; }
 
-.subtitle, .text-form__input[type="text"]:-ms-input-placeholder {
+.subtitle, .text-form__input:-ms-input-placeholder {
   font-size: 2rem;
   text-transform: uppercase; }
 
-.subtitle, .text-form__input[type="text"]::-ms-input-placeholder {
+.subtitle, .text-form__input::-ms-input-placeholder {
   font-size: 2rem;
   text-transform: uppercase; }
 
-.subtitle, .text-form__input[type="text"]::placeholder {
+.subtitle, .text-form__input::placeholder {
   font-size: 2rem;
   text-transform: uppercase; }
   .subtitle--blue {
@@ -343,7 +343,8 @@ HEADER
   background-image: url(../assets/image-1.jpeg);
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  background-attachment: fixed;
+  height: 100vh;
   position: relative; }
 
 .nav {
@@ -396,19 +397,19 @@ HEADER
     margin-right: 1em; }
     .navigation__item:last-child {
       margin-right: 0; }
-  .navigation .subtitle:hover, .navigation .text-form__input:hover[type="text"]::-webkit-input-placeholder {
+  .navigation .subtitle:hover, .navigation .text-form__input:hover::-webkit-input-placeholder {
     color: #285d64;
     -webkit-transform: scale(1.05);
     transform: scale(1.05); }
-  .navigation .subtitle:hover, .navigation .text-form__input:hover[type="text"]:-ms-input-placeholder {
+  .navigation .subtitle:hover, .navigation .text-form__input:hover:-ms-input-placeholder {
     color: #285d64;
     -ms-transform: scale(1.05);
     transform: scale(1.05); }
-  .navigation .subtitle:hover, .navigation .text-form__input:hover[type="text"]::-ms-input-placeholder {
+  .navigation .subtitle:hover, .navigation .text-form__input:hover::-ms-input-placeholder {
     color: #285d64;
     -ms-transform: scale(1.05);
     transform: scale(1.05); }
-  .navigation .subtitle:hover, .navigation .text-form__input:hover[type="text"]::placeholder {
+  .navigation .subtitle:hover, .navigation .text-form__input:hover::placeholder {
     color: #285d64;
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -535,6 +536,12 @@ SAMPLE SHOOTS
   transform: scale(1.02);
   z-index: 9999; }
 
+
+.contact .image-container:hover {
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25); }
+
 .image-container {
   position: relative; }
   .image-container:hover .image-container__description,
@@ -654,18 +661,28 @@ QUESTION
     width: 90%;
     padding: 0.5em;
     background: none; }
-    .text-form__input[type="text"]::-webkit-input-placeholder {
+    .text-form__input::-webkit-input-placeholder {
       opacity: 1;
       font-weight: 700; }
-    .text-form__input[type="text"]:-ms-input-placeholder {
+    .text-form__input:-ms-input-placeholder {
       opacity: 1;
       font-weight: 700; }
-    .text-form__input[type="text"]::-ms-input-placeholder {
+    .text-form__input::-ms-input-placeholder {
       opacity: 1;
       font-weight: 700; }
-    .text-form__input[type="text"]::placeholder {
+    .text-form__input::placeholder {
       opacity: 1;
       font-weight: 700; }
+    .text-form__input:focus {
+      border-top-width: 1.5px;
+      border-bottom-width: 1.5px;
+      -webkit-transition: all 0.25s ease-in-out;
+      -o-transition: all 0.25s ease-in-out;
+      transition: all 0.25s ease-in-out;
+      -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+      transform: scale(1.03);
+      z-index: 9999; }
 
 /*
 ============================================================
@@ -674,6 +691,8 @@ GALLERY
 */
 .gallery {
   background-color: #efefef; }
+  .gallery .section-title {
+    display: none; }
 
 .gallery-container {
   width: 100%;
@@ -720,6 +739,7 @@ CONTACT
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s;
+      border-width: 1.5px;
       border-color: #3c8d97; }
 
 .social-media {
@@ -734,7 +754,10 @@ CONTACT
     .social-media__icon:hover .fab {
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
-      transition: 0.3s; }
+      transition: 0.3s;
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
     .social-media__icon:hover .fa-instagram {
       color: #e4405f; }
     .social-media__icon:hover .fa-facebook-square {
@@ -891,6 +914,13 @@ MEDIA QUERIES
     font-size: 2.6rem; }
   .latest-news .image-container__description .content--small, .latest-news .image-container__description .email-form__input {
     font-size: 1.8rem; }
+  .gallery .wrapper--flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .gallery .section-title {
+    display: block; }
   .gallery .list--fb-30 {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
